@@ -1,0 +1,498 @@
+:root {
+    --colore-principale: #0b0c2a;
+    --colore-secondario: #fa0000;
+    --colore-terziario: #f8f4f0;
+    --bianco: #fbf8f8;
+    --nero: #0e0e0e;
+
+}
+
+body {
+    font-family: Oxanium;
+    overflow-x: hidden;
+}
+
+.logo {
+    max-width: 4rem;
+}
+
+
+
+.navbar-toggler {
+    color: var(--bianco);
+}
+
+.nav-style {
+    background-color: rgba(0, 22, 44, 0.8) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    padding: 0 2rem;
+    min-height: 3rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: var(--bianco) !important;
+}
+
+.nav-link:hover {
+    color: var(--bianco) !important;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 10px var(--colore-secondario),
+        0 0 20px var(--colore-secondario),
+
+
+        0 0 40px var(--colore-secondario),
+        0 0 80px var(--colore-secondario);
+    border-bottom: solid 3px var(--colore-secondario);
+}
+
+.sez-1 {
+    height: 100vh;
+    color: white;
+    backdrop-filter: blur(11px);
+
+    position: relative;
+    z-index: 1;
+
+}
+
+.bg-img {
+    background-image: url(/media/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.fontSize {
+    font-size: 4rem;
+    font-family: Doto;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+.h1-size {
+    color: var(--bianco);
+    font-size: 3.5rem;
+
+}
+
+
+
+
+.neon {
+
+
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 10px var(--colore-secondario),
+        0 0 20px var(--colore-secondario),
+
+
+        0 0 40px var(--colore-secondario),
+        0 0 80px var(--colore-secondario);
+
+    transition: text-shadow 0.3s ease;
+
+
+}
+
+.neon:hover {
+
+
+    text-shadow:
+
+        0 0 15px #ffffff,
+
+
+        0 0 20px rgb(255, 113, 113),
+        0 0 40px rgb(255, 113, 113),
+
+
+        0 0 60px rgb(255, 113, 113),
+        0 0 120px rgb(255, 113, 113),
+        0 0 170px rgb(255, 113, 113);
+}
+
+.neon-blu {
+    color: #FFFFFF;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 10px blue,
+        0 0 20px blue,
+
+
+        0 0 40px blue,
+        0 0 80px blue;
+
+    transition: text-shadow 0.3s ease;
+}
+
+.neon-blu:hover {
+    color: #FFFFFF;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 15px rgb(79, 79, 253),
+        0 0 30px rgb(79, 79, 253),
+
+
+        0 0 60px rgb(79, 79, 253),
+        0 0 100px rgb(79, 79, 253),
+        0 0 150px rgb(79, 79, 253);
+}
+
+h2 {
+    font-size: 3.5rem;
+    padding-top: 2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    color: var(--bianco);
+}
+h4{
+    color: var(--bianco);
+}
+h5{
+    color: var(--bianco);
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--bianco);
+}
+
+.img-profilo {
+    border-radius: 100%;
+    height: 17rem;
+
+    filter: brightness(0.05);
+
+}
+
+.bordo-img {
+
+    border-radius: 100%;
+    margin-bottom: 3rem;
+    border: dashed 3px var(--bianco);
+}
+
+.img-illuminata {
+    filter: brightness(1);
+
+}
+
+.img-led {
+
+    border: solid 3px var(--bianco);
+    box-shadow:
+        0 0 5px var(--colore-secondario),
+        0 0 10px var(--colore-secondario),
+        0 0 20px var(--colore-secondario),
+        /* 0 0 40px var(--colore-secondario), */
+        inset 0 0 10px var(--colore-secondario);
+
+    transition: box-shadow 0.1s ease;
+}
+
+.img-led:hover {
+
+    box-shadow:
+        0 0 5px var(--colore-secondario),
+        0 0 15px var(--colore-secondario),
+        0 0 30px var(--colore-secondario),
+        /* 0 0 60px var(--colore-secondario), */
+        inset 0 0 15px var(--colore-secondario);
+
+}
+
+.sez-2 {
+    background-color: #000f21;
+}
+
+.gradient-sez-2 {
+    background: #000F21;
+    background: linear-gradient(150deg, rgba(255, 0, 0, 0.08) 0%, rgba(0, 15, 33, 0.24)100%);
+
+}
+
+.sez-2-wrap {
+    border-bottom: solid 2px #fa0000;
+    border-top: solid 3px #0000ff;
+    padding: 8rem 0;
+}
+
+.sez-2-1 {
+    padding-bottom: 8rem;
+}
+
+
+
+
+.p-chi-sono-1 {
+    border-left: solid 3px red;
+    padding-left: 1rem;
+}
+
+.p-chi-sono-2 {
+    border-right: solid 3px blue;
+    padding-right: 1rem;
+}
+
+.img-1,
+.img-2 {
+    height: 19rem;
+    border-radius: 6px;
+    border: solid 2px var(--bianco);
+}
+
+.img-1 {
+
+    box-shadow:
+        0 0 5px var(--colore-secondario),
+        0 0 10px var(--colore-secondario),
+
+        inset 0 0 10px var(--colore-secondario);
+}
+
+.img-2 {
+    box-shadow:
+        0 0 5px #0000ff,
+        0 0 10px #0000ff,
+
+        inset 0 0 10px var(--colore-secondario);
+    height: 19rem;
+    width: auto;
+}
+
+.svg-code {
+    font-size: 2rem;
+    color: var(--colore-secondario);
+
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+}
+
+
+.svg-code-singola {
+    background-color: white;
+    border-radius: 100%;
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img-svg {
+    position: relative;
+}
+
+.sez-3{
+    padding: 8rem 0;
+}
+
+.linea-cv{
+    border-right: solid 6px red;
+}
+
+.container-linea{
+    
+    padding-top: 5rem;
+}
+
+.elemento-cv{
+    height: 15rem;
+    position: relative;
+}
+.pallino-destra{
+    position: absolute;
+    background-color: #000f21;
+    border: solid 6px #ff0000;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    left: -2.7rem;
+    top: 35%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.pallino-sinistra{
+    position: absolute;
+    background-color: #000f21;
+    border: solid 6px #ff0000;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    right: -2.7rem;
+    top: 35%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    
+}
+
+.svg-developer{
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.freccia-su{
+    position: absolute;
+    color: #fa0000;
+    top: -4rem;
+    right: -3.7rem;
+    font-size: 7rem;
+
+}
+.data-destra{
+    position: absolute;
+    top: 36%;
+    padding-left: 5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Doto;
+}
+.data-sinistra{
+    
+    position: absolute;
+    top: 36%;
+    right: 5rem;
+    /* padding-right: 5rem; */
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Doto;
+}
+
+.contenuto-sinistra{
+    padding-right: 5rem;
+}
+
+.contenuto-sinistra p{
+    font-size: 1rem;
+}
+.contenuto-destra p{
+    font-size: 1rem;
+}
+.contenuto-destra{
+    padding-left: 5rem;
+    align-items: flex-end;
+}
+.titoli-CV{
+    padding-bottom: 5rem;
+}
+
+
+
+/* BOTTONE ANIMATO */
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #FF0000, #AE0051, #6F0090, #3D00C2, #0000FF, #2900D6, #74008B, #B0004F, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #15345f;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.p-CV-button{
+    text-decoration: none;
+    color: white;
+}
+
+.glow-on-hover:hover .p-CV-button {
+    background-image: linear-gradient(45deg, #FF0000, #AE0051, #6F0090, #3D00C2, #0000FF, #2900D6, #74008B, #B0004F, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: color 0.3s ease-in-out; 
+    background-size: 400%; 
+    animation: glowing 20s linear infinite;
+}
+
+
+/* FINE BOTTONE ANIMATO */
