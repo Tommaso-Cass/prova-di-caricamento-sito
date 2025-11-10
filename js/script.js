@@ -23,119 +23,36 @@ let neonBlu = document.querySelectorAll(".neonH1");
 
 
 function creaTitolo() {
-   
 
 
-
-   setTimeout(() => {
-    l1.classList.add("neon");
-}, 895);
-
-setTimeout(() => {
-    l2.classList.add("neon");
-}, 350);
-
-setTimeout(() => {
-    l3.classList.add("neon");
-}, 1175);
-
-setTimeout(() => {
-    l3.classList.remove("neon");
-}, 2500);
-setTimeout(() => {
-    l3.classList.add("neon");
-}, 2770);
-setTimeout(() => {
-    l3.classList.remove("neon");
-}, 2770);
-setTimeout(() => {
-    l3.classList.add("neon");
-}, 3270);
-
-setTimeout(() => {
-    l4.classList.add("neon");
-}, 520);
-
-setTimeout(() => {
-    l5.classList.add("neon");
-}, 1080);
-
-setTimeout(() => {
-    l6.classList.add("neon");
-}, 300);
-
-setTimeout(() => {
-    l7.classList.add("neon");
-}, 690);
-
-setTimeout(() => {
-    l8.classList.add("neon");
-}, 1220);
-
-setTimeout(() => {
-    l8.classList.remove("neon");
-}, 1400);
-setTimeout(() => {
-    l8.classList.add("neon");
-}, 1700);
-setTimeout(() => {
-    l8.classList.remove("neon");
-}, 2000);
-setTimeout(() => {
-    l8.classList.add("neon");
-}, 2300);
-
-setTimeout(() => {
-    l9.classList.add("neon");
-}, 660);
-
-setTimeout(() => {
-    l9.classList.remove("neon");
-}, 1500);
-setTimeout(() => {
-    l9.classList.add("neon");
-}, 1800);
-setTimeout(() => {
-    l9.classList.remove("neon");
-}, 1750);
-setTimeout(() => {
-    l9.classList.add("neon");
-}, 2300);
-
-setTimeout(() => {
-    l10.classList.add("neon");
-}, 700);
-
-setTimeout(() => {
-    l11.classList.add("neon");
-}, 770);
-
-setTimeout(() => {
-    l12.classList.add("neon");
-}, 1125);
-
-setTimeout(() => {
-    l13.classList.add("neon");
-}, 370);
-
-setTimeout(() => {
-    l14.classList.add("neon");
-}, 1050);
+setTimeout(() => { l1.classList.add("neon"); }, 2300);
+setTimeout(() => { l2.classList.add("neon"); }, 2000);
+setTimeout(() => { l3.classList.add("neon"); }, 1700);
+setTimeout(() => { l4.classList.add("neon"); }, 1400);
+setTimeout(() => { l5.classList.add("neon"); }, 1100);
+setTimeout(() => { l6.classList.add("neon"); }, 800);
+setTimeout(() => { l7.classList.add("neon"); }, 500);
+setTimeout(() => { l8.classList.add("neon"); }, 500);
+setTimeout(() => { l9.classList.add("neon"); }, 800);
+setTimeout(() => { l10.classList.add("neon"); }, 1100);
+setTimeout(() => { l11.classList.add("neon"); }, 1400);
+setTimeout(() => { l12.classList.add("neon"); }, 1700);
+setTimeout(() => { l13.classList.add("neon"); }, 2000);
+setTimeout(() => { l14.classList.add("neon"); }, 2300);
 
 
-setTimeout(() => {
-    neonBlu.forEach(elemento =>{
-    elemento.classList.add("neon-blu");
-    })
-}, 3400);
+    
 
-setTimeout(() => {
-    imgProfilo.classList.add("img-led")
-}, 4200);
-setTimeout(() => {
-    imgProfilo.classList.add("img-illuminata")
-}, 4600);
+    setTimeout(() => {
+        neonBlu.forEach(elemento => elemento.classList.add("neon-blu"));
+    }, 2600);
+
+    setTimeout(() => { imgProfilo.classList.add("img-led"); }, 2950);
+    setTimeout(() => { imgProfilo.classList.add("img-illuminata"); }, 2950);
+
 
 
 }
+
+
 
