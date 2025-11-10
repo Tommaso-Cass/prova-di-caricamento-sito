@@ -7,10 +7,15 @@
 
 }
 
+
+
 body {
     font-family: Oxanium;
     overflow-x: hidden;
+    background-color: #001730;
+
 }
+
 
 .logo {
     max-width: 4rem;
@@ -27,7 +32,7 @@ body {
     backdrop-filter: blur(20px);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
     padding: 0 2rem;
-    min-height: 3rem;
+    max-height: 3rem;
 }
 
 .navbar-nav {
@@ -56,9 +61,9 @@ body {
 }
 
 .sez-1 {
-    height: 100vh;
+    min-height: 100vh;
     color: white;
-    backdrop-filter: blur(11px);
+    backdrop-filter: blur(9px);
 
     position: relative;
     z-index: 1;
@@ -66,10 +71,11 @@ body {
 }
 
 .bg-img {
-    background-image: url(../media/bg.png);
+    background-image: url(/media/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -77,12 +83,12 @@ body {
     font-size: 4rem;
     font-family: Doto;
     font-weight: 600;
-    color: #ffffff;
+    color: #021d3a;
 
 }
 
 .h1-size {
-    color: var(--bianco);
+    color: #021d3a;
     font-size: 3.5rem;
 
 }
@@ -92,10 +98,11 @@ body {
 
 .neon {
 
+    color: var(--bianco);
 
     text-shadow:
 
-        0 0 7px #ffffff,
+        0 0 7px #ffb1b1,
 
 
         0 0 10px var(--colore-secondario),
@@ -112,23 +119,24 @@ body {
 
 .neon:hover {
 
-
+    color: #FFFFFF;
     text-shadow:
 
-        0 0 15px #ffffff,
+        0 0 7px #ffffff,
 
 
-        0 0 20px rgb(255, 113, 113),
-        0 0 40px rgb(255, 113, 113),
+        0 0 25px #ff6e6e,
+        0 0 50px #ff6e6e,
 
 
-        0 0 60px rgb(255, 113, 113),
-        0 0 120px rgb(255, 113, 113),
-        0 0 170px rgb(255, 113, 113);
+        0 0 60px #ff6e6e,
+        0 0 100px #ff6e6e,
+        0 0 250px #ff6e6e;
+
 }
 
 .neon-blu {
-    color: #FFFFFF;
+    color: #cecbff;
     text-shadow:
 
         0 0 7px #ffffff,
@@ -169,10 +177,12 @@ h3 {
     font-size: 2.8rem;
     color: var(--bianco);
 }
-h4{
+
+h4 {
     color: var(--bianco);
 }
-h5{
+
+h5 {
     color: var(--bianco);
 }
 
@@ -183,7 +193,7 @@ p {
 
 .img-profilo {
     border-radius: 100%;
-    height: 17rem;
+    height: 15rem;
 
     filter: brightness(0.05);
 
@@ -231,7 +241,7 @@ p {
 
 .gradient-sez-2 {
     background: #000F21;
-    background: linear-gradient(150deg, rgba(255, 0, 0, 0.08) 0%, rgba(0, 15, 33, 0.24)100%);
+    background: linear-gradient(170deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 15, 33, 0.24)100%);
 
 }
 
@@ -260,7 +270,7 @@ p {
 
 .img-1,
 .img-2 {
-    height: 19rem;
+    max-height: 19rem;
     border-radius: 6px;
     border: solid 2px var(--bianco);
 }
@@ -280,8 +290,6 @@ p {
         0 0 10px #0000ff,
 
         inset 0 0 10px var(--colore-secondario);
-    height: 19rem;
-    width: auto;
 }
 
 .svg-code {
@@ -309,110 +317,115 @@ p {
     position: relative;
 }
 
-.sez-3{
+.sez-3 {
+    background-color:
+        #040f21;
+
+
+    }
+    
+    .container-sez-3-1 {
+    border-bottom: solid 3px rgb(255, 0, 0);
+    padding: 8rem 0;
+    }
+.container-sez-3{
+    border-bottom: solid 3px blue;
     padding: 8rem 0;
 }
 
-.linea-cv{
-    border-right: solid 6px red;
+.sez-3-bg {
+    background: #040F21;
+    background: linear-gradient(90deg, rgba(4, 15, 33, 1) 0%, rgba(0, 15, 255, 0.1) 35%, rgba(0, 15, 255, 0.1) 65%, rgba(4, 15, 33, 1) 100%);
+    height: 100%;
 }
 
-.container-linea{
-    
-    padding-top: 5rem;
-}
-
-.elemento-cv{
-    height: 15rem;
+.sinistra {
+    border-right: solid 4px red;
     position: relative;
+    padding-right: 4rem;
 }
-.pallino-destra{
+
+.destra {
+    border-left: solid 4px red;
+    position: relative;
+    padding-left: 4rem;
+
+}
+
+.pallino-sinistra {
     position: absolute;
-    background-color: #000f21;
-    border: solid 6px #ff0000;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 100%;
-    left: -2.7rem;
-    top: 35%;
-    
+    top: 50%;
+    right: -52px;
+    transform: translateY(-50%);
+    background-color: #040f38;
+    border: solid 8px #ff0000;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-.pallino-sinistra{
-    position: absolute;
-    background-color: #000f21;
-    border: solid 6px #ff0000;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 100%;
-    right: -2.7rem;
-    top: 35%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-    
-}
-
-.svg-developer{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
+    z-index: 100;
+
+}
+
+.pallino-destra {
+    position: absolute;
+    top: 50%;
+    left: -52px;
+    transform: translateY(-50%);
+    background-color: #040f38;
+    border: solid 8px #ff0000;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-}
-
-.freccia-su{
-    position: absolute;
-    color: #fa0000;
-    top: -4rem;
-    right: -3.7rem;
-    font-size: 7rem;
-
-}
-.data-destra{
-    position: absolute;
-    top: 36%;
-    padding-left: 5rem;
     font-size: 3rem;
-    font-weight: 600;
-    font-family: Doto;
+    color: white;
 }
-.data-sinistra{
-    
-    position: absolute;
-    top: 36%;
-    right: 5rem;
-    /* padding-right: 5rem; */
+
+.svg-developer {
+    display: flex;
+    align-items: center;
+}
+
+.data-sinistra,
+.data-destra {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-family: Doto;
+    height: 100%;
     font-size: 3rem;
-    font-weight: 600;
-    font-family: Doto;
 }
 
-.contenuto-sinistra{
-    padding-right: 5rem;
+.data-sinistra {
+    display: flex;
+    justify-content: end;
 }
 
-.contenuto-sinistra p{
-    font-size: 1rem;
+.arrow {
+    font-size: 8.3rem;
+    position: absolute;
+    color: red;
+    top: -5rem;
+    right: -4.4rem;
 }
-.contenuto-destra p{
-    font-size: 1rem;
+
+.titoli-CV {
+    padding-bottom: 9rem;
 }
-.contenuto-destra{
-    padding-left: 5rem;
-    align-items: flex-end;
+
+.sez-3 p {
+
+    font-size: 1.1rem;
+
 }
-.titoli-CV{
-    padding-bottom: 5rem;
-}
+
 
 
 
@@ -437,7 +450,7 @@ p {
     background: linear-gradient(45deg, #FF0000, #AE0051, #6F0090, #3D00C2, #0000FF, #2900D6, #74008B, #B0004F, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -474,12 +487,20 @@ p {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
-.p-CV-button{
+.p-CV-button {
     text-decoration: none;
     color: white;
 }
@@ -489,10 +510,159 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    transition: color 0.3s ease-in-out; 
-    background-size: 400%; 
+    transition: color 0.3s ease-in-out;
+    background-size: 400%;
     animation: glowing 20s linear infinite;
 }
 
 
 /* FINE BOTTONE ANIMATO */
+
+
+
+/* INIZIO MEDIA QUERY */
+
+
+
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .h1-size {
+        font-size: 3.5rem;
+    }
+
+    .img-profilo {
+        height: 17rem;
+    }
+
+    .bg-img {
+        background-attachment: initial;
+    }
+
+
+    .sinistra,
+    .destra {
+        border-right: none;
+        border-left: none;
+        padding: 0;
+
+
+
+
+
+        left: initial;
+        right: initial;
+        transform: none;
+
+
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .pallino-destra,
+    .pallino-sinistra {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: none;
+
+    }
+
+    .data-sinistra,
+    .data-destra {
+        justify-content: center;
+        width: auto;
+        padding: 0;
+        padding-top: 5rem;
+        align-items: center;
+    }
+
+    .titoli-CV {
+        padding-bottom: 1rem;
+    }
+
+}
+
+
+
+.riga-collaps{
+    padding-top: 3rem;
+    border-bottom: solid 3px red;
+}
+
+.lavori-secondari{
+    padding: 1rem 1rem;
+}
+
+@media (max-width: 600px) {
+
+
+    .bg-img {
+        background-attachment: initial;
+    }
+
+    .fontSize {
+        font-size: 2.8rem;
+    }
+
+    .h1-size {
+        font-size: 2.5rem;
+    }
+
+    .img-profilo {
+        height: 12rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    /* SEZONE CALENDARIO */
+
+    .sez-3-mobile {
+        padding: 8rem 0;
+        background-color: #000;
+        height: auto;
+    }
+
+    .contenuto-CV {
+
+        height: auto;
+    }
+
+    .sinistra,
+    .destra {
+        border-right: none;
+        border-left: none;
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    .pallino-destra,
+    .pallino-sinistra {
+        position: relative;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .titoli-CV {
+        padding-bottom: 1rem;
+    }
+
+    .data-sinistra,
+    .data-destra {
+        justify-content: center;
+        width: auto;
+        padding: 0;
+        padding-top: 5rem;
+        align-items: center;
+    }
+
+
+
+}
