@@ -61,9 +61,11 @@ body {
 }
 
 .sez-1 {
-    min-height: 100vh;
-    color: white;
-    backdrop-filter: blur(9px);
+    padding: 7rem 0;
+    color: rgb(255, 255, 255);
+    background: #040F21;
+    background: linear-gradient(90deg, rgba(4, 15, 33, 0.9) 0%, rgba(4, 15, 33, 0.5) 35%, rgba(4, 15, 33, 0.5) 65%, rgba(4, 15, 33, 0.9) 100%);
+    backdrop-filter: blur(6px);
 
     position: relative;
     z-index: 1;
@@ -71,7 +73,7 @@ body {
 }
 
 .bg-img {
-    background-image: url(../media/bg.png);
+    background-image: url(../media/linee-rosse.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,45 +197,38 @@ p {
     border-radius: 100%;
     height: 15rem;
 
-    filter: brightness(0.05);
+ 
 
 }
 
 .bordo-img {
-
     border-radius: 100%;
     margin-bottom: 3rem;
-    border: dashed 3px var(--bianco);
-}
-
-.img-illuminata {
-    filter: brightness(1);
+    border: dashed 3px ;
 
 }
+
+
 
 .img-led {
 
-    border: solid 3px var(--bianco);
+    
     box-shadow:
-        0 0 5px var(--colore-secondario),
-        0 0 10px var(--colore-secondario),
-        0 0 20px var(--colore-secondario),
-        /* 0 0 40px var(--colore-secondario), */
-        inset 0 0 10px var(--colore-secondario);
+
+        0 0 7px #ffffff,
+
+
+        0 0 10px #4d4dff,
+        0 0 20px #4d4dff,
+
+
+        0 0 40px #4d4dff;
+        /* 0 0 50px blue; */
 
     transition: box-shadow 0.1s ease;
 }
 
-.img-led:hover {
 
-    box-shadow:
-        0 0 5px var(--colore-secondario),
-        0 0 15px var(--colore-secondario),
-        0 0 30px var(--colore-secondario),
-        /* 0 0 60px var(--colore-secondario), */
-        inset 0 0 15px var(--colore-secondario);
-
-}
 
 .sez-2 {
     background-color: #000f21;
@@ -241,7 +236,7 @@ p {
 
 .gradient-sez-2 {
     background: #000F21;
-    background: linear-gradient(170deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 15, 33, 0.24)100%);
+    background: linear-gradient(30deg, rgba(255, 0, 0, 0.15) 0%, rgba(0, 15, 33, 0.24)100%);
 
 }
 
@@ -322,15 +317,14 @@ p {
         #040f21;
 
 
-    }
-    
-    .container-sez-3-1 {
-    border-bottom: solid 3px rgb(255, 0, 0);
-    padding: 8rem 0;
-    }
-.container-sez-3{
-    border-bottom: solid 3px blue;
-    padding: 8rem 0;
+}
+
+.container-sez-3-1 {
+    padding-top: 8rem;
+}
+
+.container-sez-3 {
+    padding-top: 8rem;
 }
 
 .sez-3-bg {
@@ -588,12 +582,12 @@ p {
 
 
 
-.riga-collaps{
+.riga-collaps {
     padding-top: 3rem;
     border-bottom: solid 3px red;
 }
 
-.lavori-secondari{
+.lavori-secondari {
     padding: 1rem 1rem;
 }
 
@@ -637,13 +631,16 @@ p {
     .destra {
         border-right: none;
         border-left: none;
-        padding: 0;
-        padding-top: 3rem;
+        padding: 0 1rem;
     }
 
     .pallino-destra,
     .pallino-sinistra {
         position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: none;
     }
 
     .arrow {
@@ -665,4 +662,21 @@ p {
 
 
 
+}
+
+.status-ok{
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    background-color: green;
+    color: #000;
+    
+}
+.status-error{
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    
 }
