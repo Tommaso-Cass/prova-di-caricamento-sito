@@ -71,7 +71,7 @@ body {
 }
 
 .bg-img {
-    background-image: url(/media/bg.png);
+    background-image: url(../media/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
