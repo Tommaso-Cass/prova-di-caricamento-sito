@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#000f21">
     <title>Cassolo Tommaso</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -13,8 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Oxanium:wght@200..800&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/prova-di-caricamento-sito/CSS/style.css">
-    <link rel="icon" href="/prova-di-caricamento-sito/media/logo.png" type="image/x-icon">
+    <link rel="icon" href="/media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
 
 </head>
 
@@ -22,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary nav-style fixed-top">
             <div class="container">
-                <img src="/prova-di-caricamento-sito/media/logo.png" alt="" class="logo">
+                <img src="/media/logo.png" alt="" class="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,16 +46,20 @@
             </div>
         </nav>
     </header>
+
+
+
+
     <main>
         <div class="main-wrapper">
             <div class="bg-img">
-                <div class="d-flex flex-column justify-content-center align-items-center sez-1">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center sez-1">
                     <div class="bordo-img">
-                        <img src="/prova-di-caricamento-sito/media/1000012142.jpg" alt="" class="img-profilo">
+                        <img src="/media/1000012142.jpg" alt="" class="img-profilo">
                     </div>
                     <h1 class="fontSize"><span class="neonH1 h1-size">&lt;h1&gt </span><span id="l1">C</span><span
                             id="l2">a</span><span id="l3">s</span><span id="l4">s</span><span id="l5">o</span><span
-                            id="l6">l</span><span id="l7">o</span><span id="l8">T</span><span id="l9">o</span><span
+                            id="l6">l</span><span id="l7">o </span><span id="l8">T</span><span id="l9">o</span><span
                             id="l10">m</span><span id="l11">m</span><span id="l12">a</span><span id="l13">s</span><span
                             id="l14">o</span><span class="neonH1 h1-size"> &lt/h1&gt</span>
                     </h1>
@@ -65,146 +70,291 @@
 
             <div class="sez-2">
                 <div class="gradient-sez-2">
-                    <div class="sez-2-wrap container">
-                        <div class="container d-flex align-items-center justify-content-center sez-2-1">
+                    <div class="sez-2-wrap container  px-2 px-lg-0">
+                        <div class="container d-flex align-items-between justify-content-center sez-2-1">
                             <div class="d-flex flex-column">
                                 <h3 class="text-center chi-sono-title">Chi sono? <i
                                         class="bi bi-person-vcard neon-blu"></i>
                                 </h3>
-                                <div class="d-flex gap-5 justify-content-between align-items-center pt-5">
-                                    <div class="col-7">
-                                        <p class="p-chi-sono-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Voluptates in pariatur, esse repudiandae aspernatur ipsam dignissimos
-                                            distinctio
-                                            quaerat, laborum molestiae deserunt cumque eos voluptatem asperiores saepe
-                                            fuga
+                                <div
+                                    class="d-flex flex-column flex-lg-row justify-content-between align-items-center pt-5">
+                                    <div class="col-12 col-lg-7">
+                                        <p class="p-chi-sono-1 pe-lg-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in
+                                            pariatur, esse repudiandae aspernatur ipsam dignissimos distinctio quaerat,
+                                            laborum molestiae deserunt cumque eos voluptatem asperiores saepe fuga
                                             deleniti ex. Tempora tempore voluptatem iure officiis veniam quasi nulla
                                             nostrum. Ut animi dolorem ducimus quam iusto laudantium saepe debitis
-                                            placeat
-                                            odit sint.</p>
+                                            placeat odit sint.
+                                        </p>
                                     </div>
-                                    <div class="col-5">
-                                        <img src="/prova-di-caricamento-sito/media/1000009653.jpg" class="img-1" alt="">
+                                    <div
+                                        class="col-12 col-lg-5 justify-content-lg-end justify-content-center d-flex pt-5 pt-lg-0">
+                                        <img src="/media/1000009653.jpg" class="img-1 img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="container d-flex flex-column">
                             <h3 class="text-center">Cosa faccio? <i class="bi bi-laptop neon"></i></h3>
-                            <div class="d-flex gap-5 align-items-center justify-content-around pt-5">
-                                <div class="container-img-svg">
-                                    <img src="/prova-di-caricamento-sito/media/ffbddd37b2ceffe750fc534bfa11429d.jpg" class="col-5 img-2" alt="">
-                                    <div class="d-flex justify-content-around svg-code">
+
+                            <div
+                                class="d-flex flex-column flex-column-reverse flex-lg-row align-items-center justify-content-between pt-5">
+                                <div class="container-img-svg col-12 col-lg-5 text-center text-lg-start pt-5 pt-lg-0">
+                                    <img src="/media/ffbddd37b2ceffe750fc534bfa11429d.jpg" class="img-2 img-fluid"
+                                        alt="">
+                                    <div
+                                        class="d-flex justify-content-center justify-content-lg-around gap-5 gap-lg-0 svg-code">
                                         <div class="svg-code-singola"><i class="bi bi-css"></i></div>
                                         <div class="svg-code-singola"><i class="bi bi-filetype-html"></i></div>
                                         <div class="svg-code-singola"><i class="bi bi-javascript"></i></div>
                                     </div>
                                 </div>
-                                <p class="col-7 p-chi-sono-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Tempora repellat fuga suscipit, molestiae molestias dolorum earum, illo, error id
-                                    voluptatum debitis! Suscipit, eaque, adipisci quod possimus dolorum recusandae
-                                    laudantium eum repellat saepe sed nostrum quos vero nihil soluta aliquam a
-                                    necessitatibus incidunt ab. Ut facilis doloremque vitae saepe repellat. Esse
-                                    perspiciatis sint, est id nesciunt culpa fugiat commodi rerum ipsa.</p>
+
+                                <p class="col-12 col-lg-7 p-chi-sono-2 text-center text-lg-start ps-lg-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat fuga
+                                    suscipit, molestiae molestias dolorum earum, illo, error id voluptatum debitis!
+                                    Suscipit, eaque, adipisci quod possimus dolorum recusandae laudantium eum repellat
+                                    saepe sed nostrum quos vero nihil soluta aliquam a necessitatibus incidunt ab. Ut
+                                    facilis doloremque vitae saepe repellat. Esse perspiciatis sint, est id nesciunt
+                                    culpa fugiat commodi rerum ipsa.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="sez-3">
-                    <div>
-                        <div class="titoli-CV d-flex flex-column align-items-center justify-content-center">
+            </div>
+
+
+
+
+
+
+            <div class="sez-3">
+                <div class="sez-3-bg">
+
+                    <div class="container container-sez-3">
+
+                        <div class="titoli-CV d-flex flex-column align-items-center justify-content-center gap-4">
                             <h3>Il mio CV <i class="bi bi-file-earmark-person neon-blu"></i></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, excepturi.</p>
                             <button class="glow-on-hover" type="button">
                                 <a href="/media/CV_Cassolo_Tommaso_24_09.pdf" download="Curriculum_Vitae_TuoNome.pdf"
                                     class="p-CV-button">
-                                    Scarica il mio CV in PDF
+                                    Scarica il mio CV in PDF <i class="bi bi-download"></i>
                                 </a>
                             </button>
                         </div>
 
-                        <div class="d-flex container container-linea">
-                            <div class="col-6 linea-cv">
-
-                                <div class="elemento-cv">
-                                    <i class="bi bi-arrow-up freccia-su"></i>
-                                    <div class="pallino-sinistra">
-                                        <i class="bi bi-code-slash svg-developer"></i>
-                                    </div>
-                                    <div class="contenuto-sinistra">
-                                        <h4>Programmatore web</h4>
-                                        <h5>Presso Kilobit Srl, Torino</h5>
-                                        <p>Durante questa esperienza ho avuto l’opportunità di lavorare su
-                                            progetti reali, approfondendo l’uso di alcune tecnologie
-                                            fondamentali nello sviluppo web.
-                                            Le principali competenze acquisite includono:
-                                            <br>
-                                            - WordPress, con personalizzazione tramite CSS e JavaScript <br>
-                                            - Introduzione allo sviluppo front-end con Vue.js
 
 
-                                        </p>
-                                    </div>
+                        <div class="d-flex flex-column flex-column-reverse gap-lg-0 gap-4 flex-lg-row">
+                            <div
+                                class="col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center sinistra gap-lg-0 gap-4">
+                                <div class="arrow">
+                                    <i class="bi bi-arrow-up"></i>
                                 </div>
-                                <div class="elemento-cv">
-                                    <p class="data-sinistra neon-blu">2025</p>
+                                <div class="pallino-sinistra">
+                                    <i class="bi bi-code-slash svg-developer"></i>
                                 </div>
-                                <div class="elemento-cv">
-                                    <div class="pallino-sinistra">
-                                        <i class="bi bi-buildings svg-developer"></i>
-                                    </div>
-                                    <div class="contenuto-sinistra">
-                                        <h4>Operatore socio sanitario e Commis di cucina</h4>
-                                        <h5>Presso: Love & Care Santa Barbara, California, USA</h5>
-                                        <p>- Prestazione di assistenza diretta ai pazienti in diverse RSA, in
-                                            strutture di lusso <br>
-                                            - Supporto nelle attività quotidiane dei residenti e nella
-                                            riabilitazione psicofisica <br>
-                                            - Mansioni integrate in cucina e sala, sviluppando capacità di
-                                            gestione multi-tasking <br>
-                                            - Sviluppo di competenze chiave: lavoro in team, flessibilità,
-                                            problem solving e adattamento in contesto internazionale
-
-                                        </p>
-                                    </div>
+                                <div>
+                                    <h4>Programmatore web</h4>
+                                    <h5>Presso Kilobit Srl, Torino</h5>
+                                    <p>Durante questa esperienza ho avuto l’opportunità di lavorare su
+                                        progetti reali, approfondendo l’uso di alcune tecnologie
+                                        fondamentali nello sviluppo web.
+                                        Le principali competenze acquisite includono:
+                                        <br>
+                                        - WordPress, con personalizzazione tramite CSS e JavaScript <br>
+                                        - Introduzione allo sviluppo front-end con Vue.js
+                                    </p>
                                 </div>
-                                <div class="elemento-cv">
-                                    <p class="data-sinistra neon-blu">2022</p>
-                                </div>
-
-
                             </div>
-                            <div class="col-6">
-                                <div class="elemento-cv">
-                                    <p class="data-destra neon">2025</p>
-                                </div>
-                                <div class="elemento-cv">
-                                    <div class="pallino-destra">
-                                        <i class="bi bi-backpack svg-developer"></i>
-                                    </div>
-                                    <div class="contenuto-destra">
-                                        <h4>Qualifica Tecnico di sviluppo e gestione siti web.</h4>
-                                        <h5>Presso: Immaginazione e Lavoro. <br>
-                                            Via Carlo Alberto, 22/A, 10123 Torino TO</h5>
-                                        <p>Durante il mio percorso formativo ho approfondito le
-                                            tecnologie fondamentali dello sviluppo web, acquisendo
-                                            competenze sia teoriche che pratiche.
-                                            Le principali materie trattate sono state:
-                                            - HTML e CSS per la creazione di interfacce web responsive <br>
-                                            - JavaScript per la gestione dell’interattività lato client <br>
-                                            - Basi di SQL e React
+                            <div class="col-lg-6 col-12 destra">
+                                <span class="data-destra neon">2025</span>
+                            </div>
+                        </div>
 
+
+
+                        <div class="d-flex flex-column gap-lg-0 gap-4 flex-lg-row">
+                            <div class="col-lg-6 col-12 sinistra">
+                                <span class="data-sinistra neon-blu">2025</span>
+                            </div>
+                            <div
+                                class="col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center gap-lg-0 gap-4 destra">
+                                <div class="pallino-destra">
+                                    <i class="bi bi-backpack svg-developer"></i>
+                                </div>
+                                <div>
+                                    <h4>Qualifica Tecnico di sviluppo e gestione siti web.</h4>
+                                    <h5>Presso: Immaginazione e Lavoro. <br>
+                                        Via Carlo Alberto, 22/A, 10123 Torino TO</h5>
+                                    <p>Durante il mio percorso formativo ho approfondito le
+                                        tecnologie fondamentali dello sviluppo web, acquisendo
+                                        competenze sia teoriche che pratiche.
+                                        Le principali materie trattate sono state:
+                                        - HTML e CSS per la creazione di interfacce web responsive <br>
+                                        - JavaScript per la gestione dell’interattività lato client <br>
+                                        - Basi di SQL e React
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-flex flex-column flex-column-reverse gap-lg-0 gap-4 flex-lg-row">
+                            <div
+                                class="col-lg-6 col-12 sinistra d-flex flex-column align-items-center justify-content-center gap-lg-0 gap-4">
+                                <div class="pallino-sinistra">
+                                    <i class="bi bi-buildings svg-developer"></i>
+                                </div>
+                                <div>
+                                    <h4>Operatore socio sanitario e Commis di cucina</h4>
+                                    <h5>Presso: Love & Care Santa Barbara, California, USA</h5>
+                                    <p>- Prestazione di assistenza diretta ai pazienti in diverse RSA, in
+                                        strutture di lusso <br>
+                                        - Supporto nelle attività quotidiane dei residenti e nella
+                                        riabilitazione psicofisica <br>
+                                        - Mansioni integrate in cucina e sala, sviluppando capacità di
+                                        gestione multi-tasking <br>
+                                        - Sviluppo di competenze chiave: lavoro in team, flessibilità,
+                                        problem solving e adattamento in contesto internazionale
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12  destra">
+                                <span class="data-destra neon">2023</span>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="d-flex flex-column gap-lg-0 gap-4 flex-lg-row">
+                            <div class="col-lg-6 col-12 sinistra">
+                                <span class="data-sinistra neon-blu">2021</span>
+                            </div>
+                            <div
+                                class="col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center destra gap-lg-0 gap-4">
+                                <div class="pallino-destra">
+                                    <i class="bi bi-globe-europe-africa svg-developer"></i>
+                                </div>
+                                <div>
+                                    <h4>Servizio Civile Universale</h4>
+                                    <h5>Good Samaritan Home Mafi - Adidome,
+                                        Ghana</h5>
+                                    <p>- Supporto educativo e ricreativo per bambini e ragazzi con
+                                        disabilità mentali e fisiche <br>
+                                        - Insegnamento di basi di grammatica, attività sportive e
+                                        giochi per favorire la socializzazione <br>
+                                        - Cura della riabilitazione psicofisica e supporto
+                                        all’autonomia nelle attività quotidiane <br>
+                                        - Sviluppo di competenze chiave: empatia, organizzazione,
+                                        adattamento e lavoro in team in contesto internazionale
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="container container-sez-3-1">
+
+                        <div>
+
+                            <div>
+                                <h2>Tutte le altre esperienze lavorative</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit iste
+                                    reiciendis numquam, veritatis cupiditate exercitationem illum quidem error sed.</p>
+                            </div>
+
+
+
+                            <p class="d-inline-flex gap-1">
+                                <button class="glow-on-hover" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <span class="p-CV-button">ciao</span>
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4 lavori-secondari">
+                                        <h4>Servizio Civile Universale</h4>
+                                        <h5>Good Samaritan Home Mafi - Adidome,
+                                            Ghana</h5>
+                                        <p>- Supporto educativo e ricreativo per bambini e ragazzi con
+                                            disabilità mentali e fisiche <br>
+                                            - Insegnamento di basi di grammatica, attività sportive e
+                                            giochi per favorire la socializzazione <br>
+                                            - Cura della riabilitazione psicofisica e supporto
+                                            all’autonomia nelle attività quotidiane <br>
+                                            - Sviluppo di competenze chiave: empatia, organizzazione,
+                                            adattamento e lavoro in team in contesto internazionale
                                         </p>
                                     </div>
-                                </div>
-                                <div class="elemento-cv">
-                                    <p class="data-destra neon">2023</p>
-                                </div>
-                                <div class="elemento-cv">
-                                    <div class="pallino-destra">
-                                        <i class="bi bi-globe-europe-africa svg-developer"></i>
+
+                                    <div class="col-12 col-md-6 col-lg-4 lavori-secondari">
+                                        <h4>Servizio Civile Universale</h4>
+                                        <h5>Good Samaritan Home Mafi - Adidome,
+                                            Ghana</h5>
+                                        <p>- Supporto educativo e ricreativo per bambini e ragazzi con
+                                            disabilità mentali e fisiche <br>
+                                            - Insegnamento di basi di grammatica, attività sportive e
+                                            giochi per favorire la socializzazione <br>
+                                            - Cura della riabilitazione psicofisica e supporto
+                                            all’autonomia nelle attività quotidiane <br>
+                                            - Sviluppo di competenze chiave: empatia, organizzazione,
+                                            adattamento e lavoro in team in contesto internazionale
+                                        </p>
                                     </div>
-                                    <div class="contenuto-destra">
+
+                                    <div class="col-12 col-md-6 col-lg-4 lavori-secondari">
+                                        <h4>Servizio Civile Universale</h4>
+                                        <h5>Good Samaritan Home Mafi - Adidome,
+                                            Ghana</h5>
+                                        <p>- Supporto educativo e ricreativo per bambini e ragazzi con
+                                            disabilità mentali e fisiche <br>
+                                            - Insegnamento di basi di grammatica, attività sportive e
+                                            giochi per favorire la socializzazione <br>
+                                            - Cura della riabilitazione psicofisica e supporto
+                                            all’autonomia nelle attività quotidiane <br>
+                                            - Sviluppo di competenze chiave: empatia, organizzazione,
+                                            adattamento e lavoro in team in contesto internazionale
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 lavori-secondari">
+                                        <h4>Servizio Civile Universale</h4>
+                                        <h5>Good Samaritan Home Mafi - Adidome,
+                                            Ghana</h5>
+                                        <p>- Supporto educativo e ricreativo per bambini e ragazzi con
+                                            disabilità mentali e fisiche <br>
+                                            - Insegnamento di basi di grammatica, attività sportive e
+                                            giochi per favorire la socializzazione <br>
+                                            - Cura della riabilitazione psicofisica e supporto
+                                            all’autonomia nelle attività quotidiane <br>
+                                            - Sviluppo di competenze chiave: empatia, organizzazione,
+                                            adattamento e lavoro in team in contesto internazionale
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 lavori-secondari">
+                                        <h4>Servizio Civile Universale</h4>
+                                        <h5>Good Samaritan Home Mafi - Adidome,
+                                            Ghana</h5>
+                                        <p>- Supporto educativo e ricreativo per bambini e ragazzi con
+                                            disabilità mentali e fisiche <br>
+                                            - Insegnamento di basi di grammatica, attività sportive e
+                                            giochi per favorire la socializzazione <br>
+                                            - Cura della riabilitazione psicofisica e supporto
+                                            all’autonomia nelle attività quotidiane <br>
+                                            - Sviluppo di competenze chiave: empatia, organizzazione,
+                                            adattamento e lavoro in team in contesto internazionale
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 lavori-secondari">
                                         <h4>Servizio Civile Universale</h4>
                                         <h5>Good Samaritan Home Mafi - Adidome,
                                             Ghana</h5>
@@ -220,19 +370,27 @@
                                     </div>
                                 </div>
 
-
-
                             </div>
+                            <div class="container riga-collaps"></div>
+
+
                         </div>
                     </div>
+
+
+
                 </div>
+
+
             </div>
 
         </div>
-    </main>
-    <footer></footer>
 
-    <script src="/prova-di-caricamento-sito/js/script.js"></script>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
