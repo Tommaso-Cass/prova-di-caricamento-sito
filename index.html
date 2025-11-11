@@ -14,8 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Oxanium:wght@200..800&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="icon" href="media/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="/media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
 
 </head>
 
@@ -35,11 +35,14 @@
                             <a class="nav-link active home" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/chiSiamo.html">Chi siamo</a>
+                            <a class="nav-link" href="#chiSono">Chi sono</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/shop.html">Shop</a>
+                            <a class="nav-link" href="#CV">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatti">Contatti</a>
                         </li>
                     </ul>
                 </div>
@@ -54,9 +57,7 @@
         <div class="main-wrapper">
             <div class="bg-img">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center sez-1">
-                    <div class="bordo-img">
-                        <img src="media/1000012142.jpg" alt="" class="img-profilo">
-                    </div>
+
                     <h1 class="fontSize"><span class="neonH1 h1-size">&lt;h1&gt </span><span id="l1">C</span><span
                             id="l2">a</span><span id="l3">s</span><span id="l4">s</span><span id="l5">o</span><span
                             id="l6">l</span><span id="l7">o </span><span id="l8">T</span><span id="l9">o</span><span
@@ -68,7 +69,7 @@
             </div>
 
 
-            <div class="sez-2">
+            <div class="sez-2" id="chiSono">
                 <div class="gradient-sez-2">
                     <div class="sez-2-wrap container  px-2 px-lg-0">
                         <div class="container d-flex align-items-between justify-content-center sez-2-1">
@@ -130,7 +131,7 @@
 
 
 
-            <div class="sez-3">
+            <div class="sez-3" id="CV">
                 <div class="sez-3-bg">
 
                     <div class="container container-sez-3">
@@ -326,35 +327,115 @@
                     </div>
 
 
+
+
+
+                </div>
+                <div class="contattami container" id="contatti">
+                    <div class="titolo-contact container">
+                        <h3>Contatti <i class="bi bi-chat-dots neon-blu"></i></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta possimus necessitatibus
+                            impedit quibusdam? Sit quod ipsa, recusandae natus quibusdam nihil.</p>
+                    </div>
                     <div class="form">
-                        <form id="contactForm" action="https://formspree.io/f/xpwkzzkg" method="POST"
-                            class="d-flex flex-column">
-
-                            <label>Nome (Opzionale): <input type="text" name="nome"></label>
-                            <label>Cognome (Opzionale): <input type="text" name="cognome"></label>
-                            <label>Your email: <input type="email" name="email" required></label>
-                            <label>Your message: <textarea name="message" required></textarea></label>
-
-                            <button type="submit" id="submitButton">Send</button>
-                        </form>
+                        <div class=" form-container d-flex justify-content-evenly container-contatti">
+                            <div>
+                                <form id="contactForm" class="d-flex flex-column align-items-end"
+                                    action="https://formspree.io/f/xpwkzzkg" method="POST" class="d-flex flex-column">
+                                    <div class="d-flex align-items-center justify-content-center gap-2"><label>Nome:
+                                        </label><input type="text" name="nome"></div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2"><label>Cognome:
+                                        </label><input type="text" name="cognome"></div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2"> <label>*La tua
+                                            mail: </label> <input type="email" name="email" required></div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2"><label>*Scrivi
+                                            qui il tuo messaggio: </label><textarea name="message" required></textarea>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <label for="privacyCheckbox">
+                                            Accetto l'<a href="/percorso/alla/tua/informativa.pdf"
+                                                target="_blank">Informativa sulla Privacy.</a>
+                                            <input type="checkbox" name="privacy" id="privacyCheckbox" required>
+                                        </label>
+                                    </div>
+                                    <p class="d-inline-flex mb-5 gap-1">
+                                        <button class="glow-on-hover invia" type="submit" id="submitButton">
+                                            <span class="p-CV-button">Invia <i class="bi bi-send"></i></i></span>
+                                        </button>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="text-start">
+                                    <p>Cassolo Tommaso</p>
+                                    <p><i class="bi bi-phone"></i> Tel: <a href="tel:+393518814993">+39 351 881 4993</a>
+                                    </p>
+                                    <p><i class="bi bi-envelope"></i> Mail: <a
+                                            href="mailto:tcsssolo.tcs@gmail.com">tcassolo.tcs@gmail.com</a></p>
+                                </div>
+                                <div class="gap-5 d-flex">
+                                    <a href="https://www.instagram.com/tc_asso/" target="_blank"><i
+                                            class="bi bi-instagram svg-contatti instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/tommaso-cassolo-3850962a1/" target="_blank"><i
+                                            class="bi bi-linkedin svg-contatti linkedin"></i></a>
+                                    <a href="https://wa.me/3518814993" target="_blank"><i
+                                            class="bi bi-whatsapp svg-contatti whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-                    
-                    
-                    
                 </div>
-                
-                
+
+
             </div>
-            
+
         </div>
-        
+
     </main>
-    <div id="status" class="status"></div>
+
+    <footer>
+        <div>
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <div>
+                    <img src="media/logo.png" alt="" class="logo">
+                </div>
+
+                <div>
+                    <span>
+                        <p class="fs-6">Copyright © 2025 Cassolo Tommaso. Tutti i diritti riservati.</p>
+                        <a href="">Privacy </a>|
+                        <a href="">Policy</a>
+                    </span>
+                </div>
+
+                <div class="gap-5 d-flex">
+                    <a href="https://www.instagram.com/tc_asso/" target="_blank"><i
+                            class="bi bi-instagram svg-contatti instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tommaso-cassolo-3850962a1/" target="_blank"><i
+                            class="bi bi-linkedin svg-contatti linkedin"></i></a>
+                    <a href="https://wa.me/3518814993" target="_blank"><i
+                            class="bi bi-whatsapp svg-contatti whatsapp"></i></a>
+                </div>
+
+
+                <div class="d-flex flex-column">
+                    <div class="text-start">
+                        <p class="fs-6"><a href="tel:+393518814993">+39 351 881 4993</a></p>
+                        <p class="fs-6"><a href="mailto:tcsssolo.tcs@gmail.com">tcassolo.tcs@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <span id="status" class="status d-flex align-items-center justify-content-center gap-3">
+        <p class="scritta-status-ok scritta-status-error"></p> <i id="svg-envelope"></i>
+    </span>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
