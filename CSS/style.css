@@ -69,6 +69,7 @@ body {
 
     position: relative;
     z-index: 1;
+    min-height: 100vh;
 
 }
 
@@ -193,40 +194,9 @@ p {
     color: var(--bianco);
 }
 
-.img-profilo {
-    border-radius: 100%;
-    height: 15rem;
-
- 
-
-}
-
-.bordo-img {
-    border-radius: 100%;
-    margin-bottom: 3rem;
-    border: dashed 3px ;
-
-}
 
 
 
-.img-led {
-
-    
-    box-shadow:
-
-        0 0 7px #ffffff,
-
-
-        0 0 10px #4d4dff,
-        0 0 20px #4d4dff,
-
-
-        0 0 40px #4d4dff;
-        /* 0 0 50px blue; */
-
-    transition: box-shadow 0.1s ease;
-}
 
 
 
@@ -524,9 +494,6 @@ p {
         font-size: 3.5rem;
     }
 
-    .img-profilo {
-        height: 17rem;
-    }
 
     .bg-img {
         background-attachment: initial;
@@ -589,6 +556,7 @@ p {
 
 .lavori-secondari {
     padding: 1rem 1rem;
+
 }
 
 @media (max-width: 600px) {
@@ -606,9 +574,7 @@ p {
         font-size: 2.5rem;
     }
 
-    .img-profilo {
-        height: 12rem;
-    }
+    
 
     h2 {
         font-size: 2.1rem;
@@ -665,18 +631,99 @@ p {
 }
 
 .status-ok{
+    display: block;
     position: fixed;
     top: 6rem;
     right: 6rem;
-    background-color: green;
-    color: #000;
-    
+    background-color: rgb(0, 120, 0);
+    padding: 0.5rem;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.scritta-status-ok,.scritta-status-error{
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.1rem;
+
+}
+.bi-envelope-check{
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+.bi-envelope-exclamation{
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
 }
 .status-error{
+   display: block;
     position: fixed;
     top: 6rem;
     right: 6rem;
     background-color: rgb(255, 0, 0);
-    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    z-index: 1000;
+    height: 2rem;
     
+}
+
+.contattami{
+    padding-top: 8rem;
+    text-align: center;
+}
+.form{
+    color: white;
+    font-size: 1.1rem;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+    
+}
+
+textarea, input{
+    border-radius: 5px;
+    background-color: #081c3c;
+    color: rgb(255, 255, 255);
+    border: solid 1px red;
+}
+textarea:hover, input:hover{
+    box-shadow: 
+        0 0 8px #d90b0b;
+}
+textarea:focus, input:focus{
+    outline: none;
+    border: solid 2px rgb(255, 132, 132);
+    box-shadow: 
+        0 0 15px #d90b0b;
+}
+
+form{
+    gap: 1rem;
+
+}
+.invia{
+    width: 7rem;
+    height: 2.8rem;
+}
+.svg-contatti{
+    font-size: 2rem;
+}
+
+.row.gap-elementi{
+    --bs-gutter-x: 20rem;
+}
+.instagram{
+    color: #f2556f;
+}
+.linkedin{
+    color: #0a66c2;
+}
+.whatsapp{
+    color: #0cc242;
+}
+.container-contatti{
+    gap: 8rem;
 }
