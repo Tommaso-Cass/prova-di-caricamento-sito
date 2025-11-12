@@ -28,14 +28,16 @@ body {
     height: 80%;
 
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
-    border: solid 2px red ;
+    border: solid 2px red;
 }
-.bi-list{
+
+.bi-list {
     font-size: 1.6rem;
-    
+
 }
 
 .nav-style {
@@ -84,12 +86,15 @@ body {
     min-height: 100vh;
 
 }
-.svg-sez-1 i{
+
+.svg-sez-1 i {
     font-size: 2.5rem;
 }
-.svg-sez-1{
+
+.svg-sez-1 {
     padding-top: 3rem;
 }
+
 .bg-img {
     background-image: url(../media/linee-rosse.webp);
     background-position: center;
@@ -280,15 +285,16 @@ p {
 
     position: absolute;
     width: 100%;
-    bottom: -50px;
+    bottom: -40px;
 }
 
 
 .svg-code-singola {
-    background-color: white;
+    background-color: #0a2248;
+    border: solid 2px #ff0000 ;
     border-radius: 100%;
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -407,14 +413,14 @@ p {
 
 }
 
-.lavoro-card{
+.lavoro-card {
 
 
-border: solid 1px #c2c2c2;
-background-color: #040f21;
-padding: 1rem;
-border-radius: 5px;
-color: #c2c2c2;
+    border: solid 1px #c2c2c2;
+    background-color: #040f21;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #c2c2c2;
 }
 
 
@@ -571,25 +577,27 @@ color: #c2c2c2;
     .titoli-CV {
         padding-bottom: 1rem;
     }
-    .form-container{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-   
-}
-#navbarNavDropdown {
-   
-    
-   
-    padding: 10px 0; 
-    background-color: rgba(0, 22, 44, 0.8) !important;
-    backdrop-filter: blur(20px);
-    z-index: 0;
-}
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+    }
+
+    #navbarNavDropdown {
 
 
-#navbarNavDropdown {
+
+        padding: 10px 0;
+        background-color: rgba(0, 22, 44, 0.8) !important;
+        backdrop-filter: blur(20px);
+        z-index: 0;
+    }
+
+
+    #navbarNavDropdown {
         position: absolute;
         top: 100%;
         left: 0;
@@ -601,7 +609,7 @@ color: #c2c2c2;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .navbar > .container {
+    .navbar>.container {
         position: relative;
     }
 
@@ -635,7 +643,7 @@ color: #c2c2c2;
         font-size: 2.5rem;
     }
 
-    
+
 
     h2 {
         font-size: 2.1rem;
@@ -687,7 +695,7 @@ color: #c2c2c2;
         align-items: center;
     }
 
- #navbarNavDropdown {
+    #navbarNavDropdown {
         position: absolute;
         top: 100%;
         left: 0;
@@ -699,21 +707,21 @@ color: #c2c2c2;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .navbar > .container {
+    .navbar>.container {
         position: relative;
     }
-    
 
 
-.form-container{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
-}
 
-.status-ok{
+.status-ok {
     display: block;
     position: fixed;
     top: 6rem;
@@ -723,26 +731,31 @@ color: #c2c2c2;
     border-radius: 5px;
     z-index: 1000;
 }
-.scritta-status-ok,.scritta-status-error{
+
+.scritta-status-ok,
+.scritta-status-error {
     color: #ffffff;
     margin: 0;
     font-size: 1.1rem;
 
 }
-.bi-envelope-check{
+
+.bi-envelope-check {
     color: white;
     font-size: 1.8rem;
     display: flex;
     align-items: center;
 }
-.bi-envelope-exclamation{
+
+.bi-envelope-exclamation {
     color: white;
     font-size: 1.8rem;
     display: flex;
     align-items: center;
 }
-.status-error{
-   display: block;
+
+.status-error {
+    display: block;
     position: fixed;
     top: 6rem;
     right: 6rem;
@@ -751,60 +764,75 @@ color: #c2c2c2;
     border-radius: 5px;
     z-index: 1000;
     height: 2rem;
-    
+
 }
 
-.contattami{
+.contattami {
     padding-top: 8rem;
     text-align: center;
 }
-.form{
+.contatti-wrap{
+    background: #000F21;
+    background: linear-gradient(30deg, rgba(255, 0, 0, 0.1) 0%, rgba(0, 15, 33, 0.2)100%);
+
+}
+.form {
     color: white;
     font-size: 1.1rem;
     padding-bottom: 8rem;
     padding-top: 2rem;
-    
+
 }
 
-textarea, input{
+textarea,
+input {
     border-radius: 5px;
     background-color: #081c3c;
     color: rgb(255, 255, 255);
     border: solid 1px red;
 }
-textarea:hover, input:hover{
-    box-shadow: 
+
+textarea:hover,
+input:hover {
+    box-shadow:
         0 0 8px #d90b0b;
 }
-textarea:focus, input:focus{
+
+textarea:focus,
+input:focus {
     outline: none;
     border: solid 2px rgb(255, 132, 132);
-    box-shadow: 
+    box-shadow:
         0 0 15px #d90b0b;
 }
 
-form{
+form {
     gap: 1rem;
 
 }
-.invia{
+
+.invia {
     width: 7rem;
     height: 2.8rem;
 }
-.svg-contatti{
+
+.svg-contatti {
     font-size: 2rem;
 }
 
-.row.gap-elementi{
+.row.gap-elementi {
     --bs-gutter-x: 20rem;
 }
-.instagram{
+
+.instagram {
     color: #f2556f;
 }
-.linkedin{
+
+.linkedin {
     color: #0a66c2;
 }
-.whatsapp{
+
+.whatsapp {
     color: #0cc242;
 }
 
@@ -812,9 +840,11 @@ form{
 
 
 
-footer p, a{
+footer p,
+a {
     font-size: 15px;
 }
-.footer-wrap{
+
+.footer-wrap {
     padding: 1rem 0;
 }
