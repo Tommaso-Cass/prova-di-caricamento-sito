@@ -111,19 +111,24 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+
                         <div class="container d-flex flex-column">
                             <h3 class="text-center">Cosa faccio? <i class="bi bi-laptop neon"></i></h3>
 
                             <div
                                 class="d-flex flex-column flex-column-reverse flex-lg-row align-items-center justify-content-between pt-5">
-                                <div class="container-img-svg col-12 col-lg-5 text-center text-lg-start pt-5 pt-lg-0">
-                                    <img src="media/ffbddd37b2ceffe750fc534bfa11429d.jpg" class="img-2 img-fluid"
-                                        alt="">
-                                    <div
-                                        class="d-flex justify-content-center justify-content-lg-around gap-5 gap-lg-0 svg-code">
-                                        <div class="svg-code-singola"><i class="bi bi-css"></i></div>
-                                        <div class="svg-code-singola"><i class="bi bi-filetype-html"></i></div>
-                                        <div class="svg-code-singola"><i class="bi bi-javascript"></i></div>
+                                <div class="container-img-svg  col-12 col-lg-5 pt-5 pt-lg-0">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="media/ffbddd37b2ceffe750fc534bfa11429d.jpg" class="img-2 img-fluid"
+                                            alt="">
+                                            <div class="d-flex justify-content-center justify-content-lg-around gap-5 gap-lg-0 svg-code">
+                                                <div class="svg-code-singola"><i class="bi bi-css"></i></div>
+                                                <div class="svg-code-singola"><i class="bi bi-filetype-html"></i></div>
+                                                <div class="svg-code-singola"><i class="bi bi-javascript"></i></div>
+                                            </div>
                                     </div>
                                 </div>
 
@@ -285,7 +290,7 @@
                         <div>
 
                             <div
-                                class="d-flex align-items-center justify-content-center flex-column gap-4 titolo-sez-3-1">
+                                class="d-flex align-items-center justify-content-center text-center flex-column gap-4 titolo-sez-3-1">
                                 <h3>Altre esperienze lavorative <i class="bi bi-list-ul neon"></i></h3>
                                 <p>Clicca su "scopri di più" per vedere tutto il mio passato lavorativo.</p>
                                 <p class="d-inline-flex mb-5 gap-1">
@@ -358,60 +363,61 @@
 
 
                 </div>
-                <div class="contattami container" id="contatti">
-                    <div class="titolo-contact container">
-                        <h3>Contatti <i class="bi bi-chat-dots neon-blu"></i></h3>
-                        <p class="text-center">
-                            Mandami un messaggio direttamente dal form oppure scegli il modo che preferisci per comtattarmi. <br>
-                        Rispondo entro 12 ore.</p>
-                    </div>
-                    <div class="form">
-                        <div class=" form-container d-flex justify-content-lg-evenly container-contatti">
-                            <div>
-                                <form id="contactForm" class="d-flex flex-column align-items-end"
-                                    action="https://formspree.io/f/xpwkzzkg" method="POST" class="d-flex flex-column">
-                                    <div class="d-flex align-items-center justify-content-center gap-2"><label>Nome:
-                                        </label><input type="text" name="nome"></div>
-                                    <div class="d-flex align-items-center justify-content-center gap-2"><label>Cognome:
-                                        </label><input type="text" name="cognome"></div>
-                                    <div class="d-flex align-items-center justify-content-center gap-2"> <label>*La tua
-                                            mail: </label> <input type="email" name="email" required></div>
-                                    <div class="d-flex align-items-center justify-content-center gap-2"><label>*Scrivi
-                                            qui il tuo messaggio: </label><textarea name="message" required></textarea>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-2 mb-3">
-                                        <label for="privacyCheckbox">
-                                            Accetto l'<a href="/percorso/alla/tua/informativa.pdf"
-                                                target="_blank">Informativa sulla Privacy.</a>
-                                            <input type="checkbox" name="privacy" id="privacyCheckbox" required>
-                                        </label>
-                                    </div>
-                                    <p class="d-inline-flex mb-5 gap-1">
-                                        <button class="glow-on-hover invia" type="submit" id="submitButton">
-                                            <span class="p-CV-button">Invia <i class="bi bi-send"></i></i></span>
-                                        </button>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex flex-column">
-                                <div class="text-start">
-                                    <p>Cassolo Tommaso</p>
-                                    <p><i class="bi bi-phone"></i> Tel: <a href="tel:+393518814993">+39 351 881 4993</a>
-                                    </p>
-                                    <p><i class="bi bi-envelope"></i> Mail: <a
-                                            href="mailto:tcsssolo.tcs@gmail.com">tcassolo.tcs@gmail.com</a></p>
+                <div class="contatti-wrap">
+                    <div class="contattami container" id="contatti">
+                        <div class="titolo-contact container">
+                            <h3>Contatti <i class="bi bi-chat-dots neon-blu"></i></h3>
+                            <p class="text-center">
+                                Mandami un messaggio direttamente dal form oppure scegli il modo che preferisci per comtattarmi. <br>
+                            Rispondo entro 12 ore.</p>
+                        </div>
+                        <div class="form">
+                            <div class=" form-container d-flex justify-content-lg-evenly container-contatti">
+                                <div>
+                                    <form id="contactForm" class="d-flex flex-column align-items-end"
+                                        action="https://formspree.io/f/xpwkzzkg" method="POST" class="d-flex flex-column">
+                                        <div class="d-flex align-items-center justify-content-center gap-2"><label>Nome:
+                                            </label><input type="text" name="nome"></div>
+                                        <div class="d-flex align-items-center justify-content-center gap-2"><label>Cognome:
+                                            </label><input type="text" name="cognome"></div>
+                                        <div class="d-flex align-items-center justify-content-center gap-2"> <label>*La tua
+                                                mail: </label> <input type="email" name="email" required></div>
+                                        <div class="d-flex align-items-center justify-content-center gap-2"><label>*Scrivi
+                                                qui il tuo messaggio: </label><textarea name="message" required></textarea>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <label for="privacyCheckbox">
+                                                Accetto l'<a href="/percorso/alla/tua/informativa.pdf"
+                                                    target="_blank">Informativa sulla Privacy.</a>
+                                                <input type="checkbox" name="privacy" id="privacyCheckbox" required>
+                                            </label>
+                                        </div>
+                                        <p class="d-inline-flex mb-5 gap-1">
+                                            <button class="glow-on-hover invia" type="submit" id="submitButton">
+                                                <span class="p-CV-button">Invia <i class="bi bi-send"></i></i></span>
+                                            </button>
+                                        </p>
+                                    </form>
                                 </div>
-                                <div class="gap-5 d-flex">
-                                    <a href="https://www.instagram.com/tc_asso/" target="_blank"><i
-                                            class="bi bi-instagram svg-contatti instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/tommaso-cassolo-3850962a1/" target="_blank"><i
-                                            class="bi bi-linkedin svg-contatti linkedin"></i></a>
-                                    <a href="https://wa.me/3518814993" target="_blank"><i
-                                            class="bi bi-whatsapp svg-contatti whatsapp"></i></a>
+                                <div class="d-flex flex-column">
+                                    <div class="text-start">
+                                        <p>Cassolo Tommaso</p>
+                                        <p><i class="bi bi-phone"></i> Tel: <a href="tel:+393518814993">+39 351 881 4993</a>
+                                        </p>
+                                        <p><i class="bi bi-envelope"></i> Mail: <a
+                                                href="mailto:tcsssolo.tcs@gmail.com">tcassolo.tcs@gmail.com</a></p>
+                                    </div>
+                                    <div class="gap-5 d-flex">
+                                        <a href="https://www.instagram.com/tc_asso/" target="_blank"><i
+                                                class="bi bi-instagram svg-contatti instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/tommaso-cassolo-3850962a1/" target="_blank"><i
+                                                class="bi bi-linkedin svg-contatti linkedin"></i></a>
+                                        <a href="https://wa.me/3518814993" target="_blank"><i
+                                                class="bi bi-whatsapp svg-contatti whatsapp"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
