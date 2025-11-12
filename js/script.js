@@ -119,7 +119,7 @@ form.addEventListener('submit', function (event) {
                     statusDiv.classList.remove("status-error");
                     scrittaStatus.textContent = "";
                     svgEnvelope.classList.remove("bi", "bi-envelope-exclamation");
-                }, 50000000);
+                }, 5000);
                 
         })
 
