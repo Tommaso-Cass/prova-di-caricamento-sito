@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", creaTitolo);
 
+document.addEventListener("DOMContentLoaded", function(){
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl, {
+
+            trigger: 'hover focus'
+        });
+
+    });
+})
+
 
 let l1 = document.querySelector("#l1");
 let l2 = document.querySelector("#l2");
@@ -128,6 +139,10 @@ form.addEventListener('submit', function (event) {
             submitButton.disabled = false;
 
         });
+
+
+
+
 
 
     });
