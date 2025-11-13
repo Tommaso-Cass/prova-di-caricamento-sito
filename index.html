@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary nav-style fixed-top">
             <div class="container">
-                <img src="media/logo.png" alt="" class="logo">
+                <a href=""><img src="media/logo.png" alt="" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -91,17 +91,15 @@
                                     class="d-flex flex-column flex-lg-row justify-content-between align-items-center pt-5">
                                     <div class="col-12 col-lg-7">
                                         <p class="p-chi-sono-1 pe-lg-4">
-                                            Ciao! Sono Tommaso Cassolo, 26 anni.
-                                            Negli ultimi anni la mia vita è stata un mix tra l'esplorazione del mondo e
-                                            il lavoro con il codice. Ho avuto l'opportunità di vivere e lavorare
-                                            all'estero, il che mi ha permesso di conoscere alcune culture da vicino e di
-                                            sviluppare una grande capacità di adattamento alle situazioni nuove e
-                                            inaspettate.
-                                            In seguito ho scoperto una vera passione per la programmazione. Ho
-                                            completato un Bootcamp Front-End e da lì in poi non ho più smesso di
-                                            programmare, cerco di imparare cose nuove ogni giorno e di migliorare
-                                            professionalente, con solo un obbiettivo in testa... Divenatre il migliore(O
-                                            almeno prvarci).
+                                            Ciao! Sono Tommaso Cassolo, 26 anni. Negli ultimi anni la mia vita è stata
+                                            un mix tra l'esplorazione del mondo e il lavoro con il codice. Ho avuto
+                                            l'opportunità di vivere e lavorare all'estero, il che mi ha permesso di
+                                            conoscere alcune culture da vicino e di sviluppare una grande capacità di
+                                            adattamento alle situazioni nuove e inaspettate. In seguito ho scoperto una
+                                            vera passione per la programmazione. Ho completato un Bootcamp Front-End e
+                                            da lì in poi non ho più smesso di programmare, cerco di imparare cose nuove
+                                            ogni giorno e di migliorare professionalmente, con solo un obiettivo in
+                                            testa... Diventare il migliore (o almeno provarci).
                                         </p>
                                     </div>
                                     <div
@@ -124,21 +122,39 @@
                                     <div class="d-flex align-items-center justify-content-center">
                                         <img src="media/ffbddd37b2ceffe750fc534bfa11429d.jpg" class="img-2 img-fluid"
                                             alt="">
-                                            <div class="d-flex justify-content-center justify-content-lg-around gap-5 gap-lg-0 svg-code">
-                                                <div class="svg-code-singola"><i class="bi bi-css"></i></div>
-                                                <div class="svg-code-singola"><i class="bi bi-filetype-html"></i></div>
-                                                <div class="svg-code-singola"><i class="bi bi-javascript"></i></div>
-                                            </div>
+                                        <div
+                                            class="d-flex justify-content-center justify-content-lg-around gap-5 gap-lg-0 svg-code">
+
+
+
+
+                                            <button type="button" class="svg-code-singola" data-bs-container="body"
+                                                data-bs-toggle="popover" data-bs-placement="bottom"
+                                                data-bs-content="CSS è il linguaggio che definisce l'aspetto, il colore e il layout di un sito.">
+                                                <i class="bi bi-css"></i>
+                                            </button>
+                                            <button type="button" class="svg-code-singola" data-bs-container="body"
+                                                data-bs-toggle="popover" data-bs-placement="bottom"
+                                                data-bs-content="HTML è il linguaggio che fornisce la struttura e i contenuti base al sito web.">
+                                                <i class="bi bi-filetype-html"></i>
+                                            </button>
+                                            <button type="button" class="svg-code-singola" data-bs-container="body"
+                                                data-bs-toggle="popover" data-bs-placement="bottom"
+                                                data-bs-content="JavaScript è il linguaggio che crea la logica e l'interazione di un sito web.">
+                                                <i class="bi bi-javascript"></i></i>
+                                            </button>
+
+
+                                        </div>
                                     </div>
                                 </div>
 
                                 <p class="col-12 col-lg-7 p-chi-sono-2 text-center text-lg-start ps-lg-4">
                                     Sono un Front-End Developer e il mio lavoro consiste nel far sembrare le cose belle
                                     e farle funzionare senza troppi problemi! Sono specializzato in CSS e JavaScript, e
-                                    attualmente sto approfondendo React.
-
-                                    Il mio obiettivo finale, però, è imparare sia il Front-End che il Back-End, in
-                                    quanto voglio essere in grado di creare applicazioni complete da zero.
+                                    attualmente sto approfondendo React. Il mio obiettivo finale, però, è imparare sia
+                                    il Front-End che il Back-End, in quanto voglio essere in grado di creare
+                                    applicazioni complete da zero.
                                 </p>
                             </div>
                         </div>
@@ -368,22 +384,29 @@
                         <div class="titolo-contact container">
                             <h3>Contatti <i class="bi bi-chat-dots neon-blu"></i></h3>
                             <p class="text-center">
-                                Mandami un messaggio direttamente dal form oppure scegli il modo che preferisci per comtattarmi. <br>
-                            Rispondo entro 12 ore.</p>
+                                Mandami un messaggio direttamente dal form oppure scegli il modo che preferisci per
+                                comtattarmi. <br>
+                                Rispondo entro 12 ore.</p>
                         </div>
                         <div class="form">
                             <div class=" form-container d-flex justify-content-lg-evenly container-contatti">
                                 <div>
                                     <form id="contactForm" class="d-flex flex-column align-items-end"
-                                        action="https://formspree.io/f/xpwkzzkg" method="POST" class="d-flex flex-column">
+                                        action="https://formspree.io/f/xpwkzzkg" method="POST"
+                                        class="d-flex flex-column">
                                         <div class="d-flex align-items-center justify-content-center gap-2"><label>Nome:
                                             </label><input type="text" name="nome"></div>
-                                        <div class="d-flex align-items-center justify-content-center gap-2"><label>Cognome:
-                                            </label><input type="text" name="cognome"></div>
-                                        <div class="d-flex align-items-center justify-content-center gap-2"> <label>*La tua
+                                        <div class="d-flex align-items-center justify-content-center gap-2">
+                                            <label>Cognome:
+                                            </label><input type="text" name="cognome">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center gap-2"> <label>*La
+                                                tua
                                                 mail: </label> <input type="email" name="email" required></div>
-                                        <div class="d-flex align-items-center justify-content-center gap-2"><label>*Scrivi
-                                                qui il tuo messaggio: </label><textarea name="message" required></textarea>
+                                        <div class="d-flex align-items-center justify-content-center gap-2">
+                                            <label>*Scrivi
+                                                qui il tuo messaggio: </label><textarea name="message"
+                                                required></textarea>
                                         </div>
                                         <div class="d-flex align-items-center gap-2 mb-3">
                                             <label for="privacyCheckbox">
@@ -402,7 +425,8 @@
                                 <div class="d-flex flex-column">
                                     <div class="text-start">
                                         <p>Cassolo Tommaso</p>
-                                        <p><i class="bi bi-phone"></i> Tel: <a href="tel:+393518814993">+39 351 881 4993</a>
+                                        <p><i class="bi bi-phone"></i> Tel: <a href="tel:+393518814993">+39 351 881
+                                                4993</a>
                                         </p>
                                         <p><i class="bi bi-envelope"></i> Mail: <a
                                                 href="mailto:tcsssolo.tcs@gmail.com">tcassolo.tcs@gmail.com</a></p>
@@ -410,8 +434,8 @@
                                     <div class="gap-5 d-flex">
                                         <a href="https://www.instagram.com/tc_asso/" target="_blank"><i
                                                 class="bi bi-instagram svg-contatti instagram"></i></a>
-                                        <a href="https://www.linkedin.com/in/tommaso-cassolo-3850962a1/" target="_blank"><i
-                                                class="bi bi-linkedin svg-contatti linkedin"></i></a>
+                                        <a href="https://www.linkedin.com/in/tommaso-cassolo-3850962a1/"
+                                            target="_blank"><i class="bi bi-linkedin svg-contatti linkedin"></i></a>
                                         <a href="https://wa.me/3518814993" target="_blank"><i
                                                 class="bi bi-whatsapp svg-contatti whatsapp"></i></a>
                                     </div>
